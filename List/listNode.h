@@ -11,7 +11,7 @@ namespace mySTL {
 
         ListNode() {}
         ListNode ( T e, ListNodePosi(T) p = nullptr, ListNodePosi(T) s = nullptr )
-            : data( e ), pre ( p ), suc( s ) {}
+            : data ( e ), pre ( p ), suc ( s ) {}
         
         ListNodePosi(T) insertAsPre ( T const& e );
         ListNodePosi(T) insertAsSuc ( T const& e );
