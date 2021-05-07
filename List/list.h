@@ -1,3 +1,6 @@
+#ifndef _LIST_H
+#define _LIST_H
+
 #include "../General/general.h"
 #include "listNode.h"
 #include <stdlib.h>
@@ -215,3 +218,5 @@ namespace mySTL {
     void List<T>::traverse ( VST& visit ) 
     { for( ListNodePosi(T) p = header->suc; p != trailer; p = p->suc ) visit( p->data ); }
 }
+
+#endif

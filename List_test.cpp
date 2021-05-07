@@ -1,17 +1,16 @@
 #include <iostream>
 #include <stdio.h>
-#include <vector>
-#include <algorithm>
-
-using std::cout;
-using std::endl;
-using namespace std;
-
-void out ( int a ) { cout << a << endl; }
+#include "Stack/stack.h"
+#include "Queue/queue.h"
+using namespace mySTL;
 
 int main(){
-    vector<int> a = { 1,3,2,4 };
-    sort(a.begin(),a.end());
-    for(int i=0;i<a.size();i++) cout << a[i] << endl;
+    Queue<int> que;
+    que.enqueue(1);
+    que.enqueue(2);
+    std::cout << que.dequeue();
+    std::cout << que.empty();
+    std::cout << que.dequeue();
+    std::cout << que.empty();
     return 0;
 }

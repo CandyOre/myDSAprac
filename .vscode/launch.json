@@ -12,7 +12,7 @@
             "request": "launch",//请求配置类型，可以为launch（启动）或attach（附加）
             "program": "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",//调试程序的路径名称
             "args": [],//调试传递参数
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,//true显示外置的控制台窗口，false显示内置终端

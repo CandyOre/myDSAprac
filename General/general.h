@@ -1,3 +1,6 @@
+#ifndef _GENERAL_H
+#define _GENERAL_H
+
 namespace mySTL {
     
     template <typename T>
@@ -12,3 +15,5 @@ namespace mySTL {
     template <typename T>
     static bool eq ( T& a, T& b ) { return a == b; }
 }
+
+#endif
